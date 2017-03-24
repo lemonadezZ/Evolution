@@ -30,7 +30,7 @@ set :repo_url, "https://github.com/lemonadezZ/Evolution.git"
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 3
 
 set :laravel_roles, :all
 
@@ -47,26 +47,23 @@ set :laravel_migration_artisan_flags, "--force --env=#{fetch(:stage)}"
 set :laravel_version, 5.4
 
 # Whether to upload the dotenv file on deploy
-set :laravel_upload_dotenv_file_on_deploy, true
+set :laravel_upload_dotenv_file_on_deploy, false
 
 # Which dotenv file to transfer to the server
-set :laravel_dotenv_file, '.env'
+set :laravel_dotenv_file, './.env'
 
 # The user that the server is running under (used for ACLs)
 set :laravel_server_user, 'deploy'
 
 # Ensure the dirs in :linked_dirs exist?
-set :laravel_ensure_linked_dirs_exist, true
+set :laravel_ensure_linked_dirs_exist, false
 
 # Link the directores in laravel_linked_dirs?
-set :laravel_set_linked_dirs, true
+set :laravel_set_linked_dirs, false
 
-set :composer_install_flags, '--no-dev --no-interaction --quiet --optimize-autoloader'
-set :composer_roles, :all
-set :composer_working_dir, -> { fetch(:release_path) }
-set :composer_dump_autoload_flags, '--optimize'
-set :composer_download_url, "https://getcomposer.org/installer"
-set :composer_version, '1.0.0-alpha8' #(default: not set)
+set :laravel_5_linked_dirs, [
+  'storage'
+]
 
 set :laravel_5_acl_paths, [
   'bootstrap/cache',
