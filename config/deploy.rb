@@ -31,3 +31,46 @@ set :repo_url, "https://github.com/lemonadezZ/Evolution.git"
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+set :laravel_roles, :all
+
+# The artisan flags to include on artisan commands by default
+set :laravel_artisan_flags, "--env=#{fetch(:stage)}"
+
+# Which roles to use for running migrations
+set :laravel_migration_roles, :all
+
+# The artisan flags to include on artisan commands by default when running migrations
+set :laravel_migration_artisan_flags, "--force --env=#{fetch(:stage)}"
+
+# The version of laravel being deployed
+set :laravel_version, 5.4
+
+# Whether to upload the dotenv file on deploy
+set :laravel_upload_dotenv_file_on_deploy, true
+
+# Which dotenv file to transfer to the server
+set :laravel_dotenv_file, './.env'
+
+# The user that the server is running under (used for ACLs)
+set :laravel_server_user, 'deploy'
+
+# Ensure the dirs in :linked_dirs exist?
+set :laravel_ensure_linked_dirs_exist, true
+
+# Link the directores in laravel_linked_dirs?
+set :laravel_set_linked_dirs, true
+
+set :laravel_5_acl_paths, [
+  'bootstrap/cache',
+  'storage',
+  'storage/app',
+  'storage/app/public',
+  'storage/framework',
+  'storage/framework/cache',
+  'storage/framework/sessions',
+  'storage/framework/views',
+  'storage/logs'
+]
+
+
