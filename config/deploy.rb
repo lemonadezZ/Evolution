@@ -47,19 +47,26 @@ set :laravel_migration_artisan_flags, "--force --env=#{fetch(:stage)}"
 set :laravel_version, 5.4
 
 # Whether to upload the dotenv file on deploy
-set :laravel_upload_dotenv_file_on_deploy, false
+set :laravel_upload_dotenv_file_on_deploy, true
 
 # Which dotenv file to transfer to the server
-set :laravel_dotenv_file, './src/.env'
+set :laravel_dotenv_file, '.env'
 
 # The user that the server is running under (used for ACLs)
 set :laravel_server_user, 'deploy'
 
 # Ensure the dirs in :linked_dirs exist?
-set :laravel_ensure_linked_dirs_exist, false
+set :laravel_ensure_linked_dirs_exist, true
 
 # Link the directores in laravel_linked_dirs?
-set :laravel_set_linked_dirs, false
+set :laravel_set_linked_dirs, true
+
+set :composer_install_flags, '--no-dev --no-interaction --quiet --optimize-autoloader'
+set :composer_roles, :all
+set :composer_working_dir, -> { fetch(:release_path) }
+set :composer_dump_autoload_flags, '--optimize'
+set :composer_download_url, "https://getcomposer.org/installer"
+set :composer_version, '1.0.0-alpha8' #(default: not set)
 
 set :laravel_5_acl_paths, [
   'bootstrap/cache',
@@ -72,5 +79,7 @@ set :laravel_5_acl_paths, [
   'storage/framework/views',
   'storage/logs'
 ]
+
+
 
 
