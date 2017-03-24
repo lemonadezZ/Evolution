@@ -47,19 +47,19 @@ set :laravel_migration_artisan_flags, "--force --env=#{fetch(:stage)}"
 set :laravel_version, 5.4
 
 # Whether to upload the dotenv file on deploy
-set :laravel_upload_dotenv_file_on_deploy, true
+set :laravel_upload_dotenv_file_on_deploy, false
 
 # Which dotenv file to transfer to the server
-set :laravel_dotenv_file, './.env'
+set :laravel_dotenv_file, './src/.env'
 
 # The user that the server is running under (used for ACLs)
 set :laravel_server_user, 'deploy'
 
 # Ensure the dirs in :linked_dirs exist?
-set :laravel_ensure_linked_dirs_exist, true
+set :laravel_ensure_linked_dirs_exist, false
 
 # Link the directores in laravel_linked_dirs?
-set :laravel_set_linked_dirs, true
+set :laravel_set_linked_dirs, false
 
 set :laravel_5_acl_paths, [
   'bootstrap/cache',
