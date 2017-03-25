@@ -1,0 +1,777 @@
+# Logfile created on 2017-03-25 04:09:46 +0800 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-25 04:09:46 +0800 cap development deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2055fe9d] Running /usr/bin/env mkdir -p /tmp as deploy@192.168.31.15
+ DEBUG [2055fe9d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2055fe9d] Finished in 0.463 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Evolution-development-jingz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Evolution-development-jingz.sh 100.0%
+  INFO [0b112b96] Running /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh as deploy@192.168.31.15
+ DEBUG [0b112b96] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh
+  INFO [0b112b96] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [218b1c8c] Running /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD as deploy@192.168.31.15
+ DEBUG [218b1c8c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD )
+ DEBUG [218b1c8c] 	924d51a371955e9255eb734043de41b319364c6c	HEAD
+  INFO [218b1c8c] Finished in 2.261 seconds with exit status 0 (successful).
+  INFO [ce1ab717] Running /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases as deploy@192.168.31.15
+ DEBUG [ce1ab717] Command: /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases
+  INFO [ce1ab717] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [b671949e] Running [ -f /var/www/Evolution/current/REVISION ] as deploy@192.168.31.15
+ DEBUG [b671949e] Command: [ -f /var/www/Evolution/current/REVISION ]
+ DEBUG [b671949e] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [a62f15a4] Running /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null as deploy@192.168.31.15
+ DEBUG [a62f15a4] Command: /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null
+ DEBUG [a62f15a4] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [a62f15a4] Finished in 0.075 seconds with exit status 0 (successful).
+ DEBUG [2f16a8e0] Running [ -f /var/www/Evolution/repo/HEAD ] as deploy@192.168.31.15
+ DEBUG [2f16a8e0] Command: [ -f /var/www/Evolution/repo/HEAD ]
+ DEBUG [2f16a8e0] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/Evolution/repo
+ DEBUG [5e2397da] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [5e2397da] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [5e2397da] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [434f5c86] Running /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git as deploy@192.168.31.15
+ DEBUG [434f5c86] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git )
+  INFO [434f5c86] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [ec1da90f] Running /usr/bin/env git remote update --prune as deploy@192.168.31.15
+ DEBUG [ec1da90f] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ec1da90f] 	正在获取 origin
+  INFO [ec1da90f] Finished in 1.931 seconds with exit status 0 (successful).
+ DEBUG [c0cedd6d] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c0cedd6d] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [c0cedd6d] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [1e4de6b4] Running /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201000 as deploy@192.168.31.15
+ DEBUG [1e4de6b4] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201000 )
+  INFO [1e4de6b4] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [e56213c7] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201000 as deploy@192.168.31.15
+ DEBUG [e56213c7] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201000 )
+  INFO [e56213c7] Finished in 0.131 seconds with exit status 0 (successful).
+ DEBUG [bc1f4f24] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [bc1f4f24] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [bc1f4f24] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [5ef647e5] Running /usr/bin/env mkdir -p bootstrap/cache as deploy@192.168.31.15
+ DEBUG [5ef647e5] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [5ef647e5] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [93da4706] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [93da4706] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [93da4706] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [16bcb9a5] Running /usr/bin/env mkdir -p storage as deploy@192.168.31.15
+ DEBUG [16bcb9a5] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage
+  INFO [16bcb9a5] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [a68d3772] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [a68d3772] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [a68d3772] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [1c5a5f84] Running /usr/bin/env mkdir -p storage/app as deploy@192.168.31.15
+ DEBUG [1c5a5f84] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/app
+  INFO [1c5a5f84] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [7825061f] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [7825061f] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [7825061f] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [739df199] Running /usr/bin/env mkdir -p storage/app/public as deploy@192.168.31.15
+ DEBUG [739df199] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/app/public
+  INFO [739df199] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [7f22077e] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [7f22077e] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [7f22077e] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [b4c1076f] Running /usr/bin/env mkdir -p storage/framework as deploy@192.168.31.15
+ DEBUG [b4c1076f] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/framework
+  INFO [b4c1076f] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [57835a21] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [57835a21] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [57835a21] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [99b5ebb8] Running /usr/bin/env mkdir -p storage/framework/cache as deploy@192.168.31.15
+ DEBUG [99b5ebb8] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [99b5ebb8] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [f620c092] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [f620c092] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [f620c092] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [c6e862e8] Running /usr/bin/env mkdir -p storage/framework/sessions as deploy@192.168.31.15
+ DEBUG [c6e862e8] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [c6e862e8] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [bfb57876] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [bfb57876] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [bfb57876] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [c40aa958] Running /usr/bin/env mkdir -p storage/framework/views as deploy@192.168.31.15
+ DEBUG [c40aa958] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [c40aa958] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [abed1235] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [abed1235] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [abed1235] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [2f71d8e6] Running /usr/bin/env mkdir -p storage/logs as deploy@192.168.31.15
+ DEBUG [2f71d8e6] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env mkdir -p storage/logs
+  INFO [2f71d8e6] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [af67e565] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [af67e565] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [af67e565] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [fb262cfb] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.168.31.15
+ DEBUG [fb262cfb] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [fb262cfb] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [fb262cfb] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [be5c2480] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [be5c2480] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [be5c2480] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [9ce6bfe0] Running /usr/bin/env echo "924d51a371955e9255eb734043de41b319364c6c" >> REVISION as deploy@192.168.31.15
+ DEBUG [9ce6bfe0] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env echo "924d51a371955e9255eb734043de41b319364c6c" >> REVISION
+  INFO [9ce6bfe0] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [a92491b7] Running if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [a92491b7] Command: if test ! -d /var/www/Evolution/releases/20170324201000; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201000'" 1>&2; false; fi
+ DEBUG [a92491b7] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [e1b620f0] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as deploy@192.168.31.15
+ DEBUG [e1b620f0] Command: cd /var/www/Evolution/releases/20170324201000 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-25 04:10:35 +0800 cap development deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6231b87c] Running /usr/bin/env mkdir -p /tmp as deploy@192.168.31.15
+ DEBUG [6231b87c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6231b87c] Finished in 0.465 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Evolution-development-jingz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Evolution-development-jingz.sh 100.0%
+  INFO [603dd361] Running /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh as deploy@192.168.31.15
+ DEBUG [603dd361] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh
+  INFO [603dd361] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [d94689ff] Running /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD as deploy@192.168.31.15
+ DEBUG [d94689ff] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD )
+ DEBUG [d94689ff] 	29ea200988214ed5f295e6cde6f3ecbaf5d16560	HEAD
+  INFO [d94689ff] Finished in 1.850 seconds with exit status 0 (successful).
+  INFO [fde7a01b] Running /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases as deploy@192.168.31.15
+ DEBUG [fde7a01b] Command: /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases
+  INFO [fde7a01b] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [de77ca72] Running [ -f /var/www/Evolution/current/REVISION ] as deploy@192.168.31.15
+ DEBUG [de77ca72] Command: [ -f /var/www/Evolution/current/REVISION ]
+ DEBUG [de77ca72] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [d5f54961] Running /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null as deploy@192.168.31.15
+ DEBUG [d5f54961] Command: /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null
+ DEBUG [d5f54961] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [d5f54961] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [06765a60] Running [ -f /var/www/Evolution/repo/HEAD ] as deploy@192.168.31.15
+ DEBUG [06765a60] Command: [ -f /var/www/Evolution/repo/HEAD ]
+ DEBUG [06765a60] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/Evolution/repo
+ DEBUG [c1f2c787] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c1f2c787] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [c1f2c787] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [856e043e] Running /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git as deploy@192.168.31.15
+ DEBUG [856e043e] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git )
+  INFO [856e043e] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [99e02567] Running /usr/bin/env git remote update --prune as deploy@192.168.31.15
+ DEBUG [99e02567] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [99e02567] 	正在获取 origin
+ DEBUG [99e02567] 	来自 https://github.com/lemonadezZ/Evolution
+   924d51a..29ea200  master     -> master
+  INFO [99e02567] Finished in 2.985 seconds with exit status 0 (successful).
+ DEBUG [3c1f41f7] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [3c1f41f7] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [3c1f41f7] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [d02c3c27] Running /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201042 as deploy@192.168.31.15
+ DEBUG [d02c3c27] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201042 )
+  INFO [d02c3c27] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [877d3fc3] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201042 as deploy@192.168.31.15
+ DEBUG [877d3fc3] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201042 )
+ DEBUG [877d3fc3] 	tar: .env：时间戳 2017-03-25 04:09:11 是未来的 956.4079649 秒之后
+tar: .gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.307525142 秒之后
+tar: .idea/Evolution.iml：时间戳 2017-03-25 04:09:11 是未来的 956.307330297 秒之后
+tar: .idea/blade.xml：时间戳 2017-03-25 04:09:11 是未来的 956.307237902 秒之后
+tar: .idea/modules.xml：时间戳 2017-03-25 04:09:11 是未来的 956.307076452 秒之后
+tar: .idea/vcs.xml：时间戳 2017-03-25 04:09:11 是未来的 956.307020331 秒之后
+tar: .idea：时间戳 2017-03-25 04:09:11 是未来的 956.306997633 秒之后
+tar: Capfile：时间戳 2017-03-25 04:09:11 是未来的 956.306947551 秒之后
+tar: Dockerfile：时间戳 2017-03-25 04:09:11 是未来的 956.306899936 秒之后
+tar: config/deploy.rb：时间戳 2017-03-25 04:09:11 是未来的 956.306804504 秒之后
+tar: config/deploy/development.rb：时间戳 2017-03-25 04:09:11 是未来的 956.30666765 秒之后
+tar: config/deploy/production.rb：时间戳 2017-03-25 04:09:11 是未来的 956.306600922 秒之后
+tar: config/deploy/staging.rb：时间戳 2017-03-25 04:09:11 是未来的 956.306548147 秒之后
+tar: config/deploy：时间戳 2017-03-25 04:09:11 是未来的 956.306530758 秒之后
+tar: config：时间戳 2017-03-25 04:09:11 是未来的 956.306521877 秒之后
+tar: nginx/development.conf：时间戳 2017-03-25 04:09:11 是未来的 956.306420516 秒之后
+tar: nginx：时间戳 2017-03-25 04:09:11 是未来的 956.30640163 秒之后
+tar: src/.env.example：时间戳 2017-03-25 04:09:11 是未来的 956.306318081 秒之后
+tar: src/.gitattributes：时间戳 2017-03-25 04:09:11 是未来的 956.306267401 秒之后
+tar: src/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.306158427 秒之后
+tar: src/app/Console/Kernel.php：时间戳 2017-03-25 04:09:11 是未来的 956.306041557 秒之后
+tar: src/app/Console：时间戳 2017-03-25 04:09:11 是未来的 956.306022902 秒之后
+tar: src/app/Exceptions/Handler.php：时间戳 2017-03-25 04:09:11 是未来的 956.305864117 秒之后
+tar: src/app/Exceptions：时间戳 2017-03-25 04:09:11 是未来的 956.305829703 秒之后
+tar: src/app/Http/Controllers/Auth/ForgotPasswordController.php：时间戳 2017-03-25 04:09:11 是未来的 956.305525456 秒之后
+tar: src/app/Http/Controllers/Auth/LoginController.php：时间戳 2017-03-25 04:09:11 是未来的 956.305398082 秒之后
+tar: src/app/Http/Controllers/Auth/RegisterController.php：时间戳 2017-03-25 04:09:11 是未来的 956.305296674 秒之后
+tar: src/app/Http/Controllers/Auth/ResetPasswordController.php：时间戳 2017-03-25 04:09:11 是未来的 956.305057402 秒之后
+tar: src/app/Http/Controllers/Auth：时间戳 2017-03-25 04:09:11 是未来的 956.305002183 秒之后
+tar: src/app/Http/Controllers/Controller.php：时间戳 2017-03-25 04:09:11 是未来的 956.304908145 秒之后
+tar: src/app/Http/Controllers：时间戳 2017-03-25 04:09:11 是未来的 956.304871163 秒之后
+tar: src/app/Http/Kernel.php：时间戳 2017-03-25 04:09:11 是未来的 956.304750678 秒之后
+tar: src/app/Http/Middleware/EncryptCookies.php：时间戳 2017-03-25 04:09:11 是未来的 956.304563903 秒之后
+tar: src/app/Http/Middleware/RedirectIfAuthenticated.php：时间戳 2017-03-25 04:09:11 是未来的 956.304470391 秒之后
+tar: src/app/Http/Middleware/TrimStrings.php：时间戳 2017-03-25 04:09:11 是未来的 956.304376916 秒之后
+tar: src/app/Http/Middleware/VerifyCsrfToken.php：时间戳 2017-03-25 04:09:11 是未来的 956.30417478 秒之后
+tar: src/app/Http/Middleware：时间戳 2017-03-25 04:09:11 是未来的 956.304127304 秒之后
+tar: src/app/Http：时间戳 2017-03-25 04:09:11 是未来的 956.304104686 秒之后
+tar: src/app/Providers/AppServiceProvider.php：时间戳 2017-03-25 04:09:11 是未来的 956.303942187 秒之后
+tar: src/app/Providers/AuthServiceProvider.php：时间戳 2017-03-25 04:09:11 是未来的 956.303841155 秒之后
+ DEBUG [877d3fc3] 	tar: src/app/Providers/BroadcastServiceProvider.php：时间戳 2017-03-25 04:09:11 是未来的 956.291399176 秒之后
+tar: src/app/Providers/EventServiceProvider.php：时间戳 2017-03-25 04:09:11 是未来的 956.290956651 秒之后
+tar: src/app/Providers/RouteServiceProvider.php：时间戳 2017-03-25 04:09:11 是未来的 956.290804057 秒之后
+tar: src/app/Providers：时间戳 2017-03-25 04:09:11 是未来的 956.290764685 秒之后
+tar: src/app/User.php：时间戳 2017-03-25 04:09:11 是未来的 956.290654917 秒之后
+tar: src/app：时间戳 2017-03-25 04:09:11 是未来的 956.290620545 秒之后
+tar: src/artisan：时间戳 2017-03-25 04:09:11 是未来的 956.290482685 秒之后
+tar: src/bootstrap/app.php：时间戳 2017-03-25 04:09:11 是未来的 956.290316445 秒之后
+tar: src/bootstrap/autoload.php：时间戳 2017-03-25 04:09:11 是未来的 956.290247703 秒之后
+tar: src/bootstrap/cache/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.290132137 秒之后
+tar: src/bootstrap/cache：时间戳 2017-03-25 04:09:11 是未来的 956.290050242 秒之后
+tar: src/bootstrap：时间戳 2017-03-25 04:09:11 是未来的 956.290024818 秒之后
+tar: src/composer.json：时间戳 2017-03-25 04:09:11 是未来的 956.289903211 秒之后
+ DEBUG [877d3fc3] 	tar: src/composer.lock：时间戳 2017-03-25 04:09:11 是未来的 956.287057906 秒之后
+tar: src/config/app.php：时间戳 2017-03-25 04:09:11 是未来的 956.28677126 秒之后
+tar: src/config/auth.php：时间戳 2017-03-25 04:09:11 是未来的 956.286642997 秒之后
+tar: src/config/broadcasting.php：时间戳 2017-03-25 04:09:11 是未来的 956.28656184 秒之后
+tar: src/config/cache.php：时间戳 2017-03-25 04:09:11 是未来的 956.286477554 秒之后
+tar: src/config/database.php：时间戳 2017-03-25 04:09:11 是未来的 956.28640016 秒之后
+tar: src/config/filesystems.php：时间戳 2017-03-25 04:09:11 是未来的 956.286291009 秒之后
+tar: src/config/mail.php：时间戳 2017-03-25 04:09:11 是未来的 956.286045971 秒之后
+tar: src/config/queue.php：时间戳 2017-03-25 04:09:11 是未来的 956.285716281 秒之后
+tar: src/config/services.php：时间戳 2017-03-25 04:09:11 是未来的 956.285562075 秒之后
+tar: src/config/session.php：时间戳 2017-03-25 04:09:11 是未来的 956.285398235 秒之后
+tar: src/config/view.php：时间戳 2017-03-25 04:09:11 是未来的 956.285293265 秒之后
+tar: src/config：时间戳 2017-03-25 04:09:11 是未来的 956.28525758 秒之后
+tar: src/database/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.283494089 秒之后
+tar: src/database/factories/ModelFactory.php：时间戳 2017-03-25 04:09:11 是未来的 956.283096828 秒之后
+tar: src/database/factories：时间戳 2017-03-25 04:09:11 是未来的 956.283028197 秒之后
+tar: src/database/migrations/2014_10_12_000000_create_users_table.php：时间戳 2017-03-25 04:09:11 是未来的 956.282781097 秒之后
+tar: src/database/migrations/2014_10_12_100000_create_password_resets_table.php：时间戳 2017-03-25 04:09:11 是未来的 956.282680798 秒之后
+tar: src/database/migrations：时间戳 2017-03-25 04:09:11 是未来的 956.28263103 秒之后
+tar: src/database/seeds/DatabaseSeeder.php：时间戳 2017-03-25 04:09:11 是未来的 956.282327117 秒之后
+tar: src/database/seeds：时间戳 2017-03-25 04:09:11 是未来的 956.282243231 秒之后
+tar: src/database：时间戳 2017-03-25 04:09:11 是未来的 956.282217956 秒之后
+tar: src/package.json：时间戳 2017-03-25 04:09:11 是未来的 956.282071948 秒之后
+tar: src/phpunit.xml：时间戳 2017-03-25 04:09:11 是未来的 956.281940674 秒之后
+ DEBUG [877d3fc3] 	tar: src/public/.htaccess：时间戳 2017-03-25 04:09:11 是未来的 956.279262532 秒之后
+ DEBUG [877d3fc3] 	tar: src/public/css/app.css：时间戳 2017-03-25 04:09:11 是未来的 956.275569573 秒之后
+tar: src/public/css：时间戳 2017-03-25 04:09:11 是未来的 956.275369846 秒之后
+tar: src/public/favicon.ico：时间戳 2017-03-25 04:09:11 是未来的 956.275232325 秒之后
+tar: src/public/index.php：时间戳 2017-03-25 04:09:11 是未来的 956.275101073 秒之后
+ DEBUG [877d3fc3] 	tar: src/public/js/app.js：时间戳 2017-03-25 04:09:11 是未来的 956.272965324 秒之后
+tar: src/public/js：时间戳 2017-03-25 04:09:11 是未来的 956.272899289 秒之后
+tar: src/public/robots.txt：时间戳 2017-03-25 04:09:11 是未来的 956.272805389 秒之后
+tar: src/public/web.config：时间戳 2017-03-25 04:09:11 是未来的 956.272723131 秒之后
+tar: src/public：时间戳 2017-03-25 04:09:11 是未来的 956.272703179 秒之后
+tar: src/readme.md：时间戳 2017-03-25 04:09:11 是未来的 956.272656189 秒之后
+tar: src/resources/assets/js/app.js：时间戳 2017-03-25 04:09:11 是未来的 956.272198189 秒之后
+tar: src/resources/assets/js/bootstrap.js：时间戳 2017-03-25 04:09:11 是未来的 956.272093338 秒之后
+tar: src/resources/assets/js/components/Example.vue：时间戳 2017-03-25 04:09:11 是未来的 956.271952463 秒之后
+tar: src/resources/assets/js/components：时间戳 2017-03-25 04:09:11 是未来的 956.27192039 秒之后
+tar: src/resources/assets/js：时间戳 2017-03-25 04:09:11 是未来的 956.271901239 秒之后
+tar: src/resources/assets/sass/_variables.scss：时间戳 2017-03-25 04:09:11 是未来的 956.271776147 秒之后
+tar: src/resources/assets/sass/app.scss：时间戳 2017-03-25 04:09:11 是未来的 956.27169876 秒之后
+tar: src/resources/assets/sass：时间戳 2017-03-25 04:09:11 是未来的 956.271670033 秒之后
+tar: src/resources/assets：时间戳 2017-03-25 04:09:11 是未来的 956.271591518 秒之后
+tar: src/resources/lang/en/auth.php：时间戳 2017-03-25 04:09:11 是未来的 956.27126517 秒之后
+tar: src/resources/lang/en/pagination.php：时间戳 2017-03-25 04:09:11 是未来的 956.271184153 秒之后
+tar: src/resources/lang/en/passwords.php：时间戳 2017-03-25 04:09:11 是未来的 956.271122217 秒之后
+tar: src/resources/lang/en/validation.php：时间戳 2017-03-25 04:09:11 是未来的 956.271066142 秒之后
+tar: src/resources/lang/en：时间戳 2017-03-25 04:09:11 是未来的 956.271047332 秒之后
+tar: src/resources/lang：时间戳 2017-03-25 04:09:11 是未来的 956.271037965 秒之后
+tar: src/resources/views/welcome.blade.php：时间戳 2017-03-25 04:09:11 是未来的 956.270947636 秒之后
+tar: src/resources/views：时间戳 2017-03-25 04:09:11 是未来的 956.270929338 秒之后
+tar: src/resources：时间戳 2017-03-25 04:09:11 是未来的 956.270920161 秒之后
+tar: src/routes/api.php：时间戳 2017-03-25 04:09:11 是未来的 956.270825372 秒之后
+tar: src/routes/channels.php：时间戳 2017-03-25 04:09:11 是未来的 956.270777496 秒之后
+tar: src/routes/console.php：时间戳 2017-03-25 04:09:11 是未来的 956.270728183 秒之后
+tar: src/routes/web.php：时间戳 2017-03-25 04:09:11 是未来的 956.270681606 秒之后
+tar: src/routes：时间戳 2017-03-25 04:09:11 是未来的 956.270664772 秒之后
+tar: src/server.php：时间戳 2017-03-25 04:09:11 是未来的 956.270621069 秒之后
+tar: src/storage/app/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.27032791 秒之后
+tar: src/storage/app/public/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.270185691 秒之后
+tar: src/storage/app/public：时间戳 2017-03-25 04:09:11 是未来的 956.270154133 秒之后
+tar: src/storage/app：时间戳 2017-03-25 04:09:11 是未来的 956.270137508 秒之后
+tar: src/storage/framework/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.270022013 秒之后
+tar: src/storage/framework/cache/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.26990147 秒之后
+tar: src/storage/framework/cache：时间戳 2017-03-25 04:09:11 是未来的 956.269873526 秒之后
+tar: src/storage/framework/sessions/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.26975937 秒之后
+tar: src/storage/framework/sessions：时间戳 2017-03-25 04:09:11 是未来的 956.269730933 秒之后
+tar: src/storage/framework/testing/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.269396073 秒之后
+tar: src/storage/framework/testing：时间戳 2017-03-25 04:09:11 是未来的 956.269332699 秒之后
+tar: src/storage/framework/views/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.26919146 秒之后
+ DEBUG [877d3fc3] 	tar: src/storage/framework/views：时间戳 2017-03-25 04:09:11 是未来的 956.268230717 秒之后
+tar: src/storage/framework：时间戳 2017-03-25 04:09:11 是未来的 956.268170621 秒之后
+tar: src/storage/logs/.gitignore：时间戳 2017-03-25 04:09:11 是未来的 956.267941466 秒之后
+tar: src/storage/logs：时间戳 2017-03-25 04:09:11 是未来的 956.267894887 秒之后
+tar: src/storage：时间戳 2017-03-25 04:09:11 是未来的 956.267875395 秒之后
+tar: src/tests/CreatesApplication.php：时间戳 2017-03-25 04:09:11 是未来的 956.267692484 秒之后
+tar: src/tests/Feature/ExampleTest.php：时间戳 2017-03-25 04:09:11 是未来的 956.267426495 秒之后
+tar: src/tests/Feature：时间戳 2017-03-25 04:09:11 是未来的 956.267374468 秒之后
+tar: src/tests/TestCase.php：时间戳 2017-03-25 04:09:11 是未来的 956.26728646 秒之后
+tar: src/tests/Unit/ExampleTest.php：时间戳 2017-03-25 04:09:11 是未来的 956.267007164 秒之后
+tar: src/tests/Unit：时间戳 2017-03-25 04:09:11 是未来的 956.266938055 秒之后
+tar: src/tests：时间戳 2017-03-25 04:09:11 是未来的 956.266914347 秒之后
+tar: src/webpack.mix.js：时间戳 2017-03-25 04:09:11 是未来的 956.266760627 秒之后
+tar: src：时间戳 2017-03-25 04:09:11 是未来的 956.266703556 秒之后
+  INFO [877d3fc3] Finished in 0.464 seconds with exit status 0 (successful).
+ DEBUG [c6fe4d54] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c6fe4d54] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [c6fe4d54] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [672aa979] Running /usr/bin/env mkdir -p bootstrap/cache as deploy@192.168.31.15
+ DEBUG [672aa979] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [672aa979] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [7679bbe9] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [7679bbe9] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [7679bbe9] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [bb1860ea] Running /usr/bin/env mkdir -p storage as deploy@192.168.31.15
+ DEBUG [bb1860ea] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage
+  INFO [bb1860ea] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [d22a3eff] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [d22a3eff] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [d22a3eff] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [be693805] Running /usr/bin/env mkdir -p storage/app as deploy@192.168.31.15
+ DEBUG [be693805] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/app
+  INFO [be693805] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [0367646e] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [0367646e] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [0367646e] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [01a94813] Running /usr/bin/env mkdir -p storage/app/public as deploy@192.168.31.15
+ DEBUG [01a94813] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/app/public
+  INFO [01a94813] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [ddd2a8f4] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [ddd2a8f4] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [ddd2a8f4] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [6c83abc7] Running /usr/bin/env mkdir -p storage/framework as deploy@192.168.31.15
+ DEBUG [6c83abc7] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/framework
+  INFO [6c83abc7] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [cf1d0f58] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [cf1d0f58] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [cf1d0f58] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [c9a447ab] Running /usr/bin/env mkdir -p storage/framework/cache as deploy@192.168.31.15
+ DEBUG [c9a447ab] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [c9a447ab] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [1edf6bf0] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [1edf6bf0] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [1edf6bf0] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [34d46c0b] Running /usr/bin/env mkdir -p storage/framework/sessions as deploy@192.168.31.15
+ DEBUG [34d46c0b] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [34d46c0b] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [cc4434da] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [cc4434da] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [cc4434da] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [8dda8884] Running /usr/bin/env mkdir -p storage/framework/views as deploy@192.168.31.15
+ DEBUG [8dda8884] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [8dda8884] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [d3453c56] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [d3453c56] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [d3453c56] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [1c50c9ff] Running /usr/bin/env mkdir -p storage/logs as deploy@192.168.31.15
+ DEBUG [1c50c9ff] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env mkdir -p storage/logs
+  INFO [1c50c9ff] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [1ae037af] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [1ae037af] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [1ae037af] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [730518fc] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.168.31.15
+ DEBUG [730518fc] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [730518fc] 	29ea200988214ed5f295e6cde6f3ecbaf5d16560
+ DEBUG [730518fc] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [5fb18b72] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [5fb18b72] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [5fb18b72] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [02a0bdcd] Running /usr/bin/env echo "29ea200988214ed5f295e6cde6f3ecbaf5d16560" >> REVISION as deploy@192.168.31.15
+ DEBUG [02a0bdcd] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env echo "29ea200988214ed5f295e6cde6f3ecbaf5d16560" >> REVISION
+  INFO [02a0bdcd] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [41b02b49] Running if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [41b02b49] Command: if test ! -d /var/www/Evolution/releases/20170324201042; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201042'" 1>&2; false; fi
+ DEBUG [41b02b49] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [d985f831] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as deploy@192.168.31.15
+ DEBUG [d985f831] Command: cd /var/www/Evolution/releases/20170324201042 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-25 04:16:26 +0800 cap development deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a5a22a78] Running /usr/bin/env mkdir -p /tmp as deploy@192.168.31.15
+ DEBUG [a5a22a78] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a5a22a78] Finished in 0.403 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Evolution-development-jingz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Evolution-development-jingz.sh 100.0%
+  INFO [daa52e95] Running /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh as deploy@192.168.31.15
+ DEBUG [daa52e95] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh
+  INFO [daa52e95] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [ee0c7060] Running /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD as deploy@192.168.31.15
+ DEBUG [ee0c7060] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD )
+ DEBUG [ee0c7060] 	2a42b4d04a9c23223146d6744875099a4dabcf84	HEAD
+  INFO [ee0c7060] Finished in 1.800 seconds with exit status 0 (successful).
+  INFO [c10fa83d] Running /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases as deploy@192.168.31.15
+ DEBUG [c10fa83d] Command: /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases
+  INFO [c10fa83d] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [71d8ab90] Running [ -f /var/www/Evolution/current/REVISION ] as deploy@192.168.31.15
+ DEBUG [71d8ab90] Command: [ -f /var/www/Evolution/current/REVISION ]
+ DEBUG [71d8ab90] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [dfd2d6c7] Running /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null as deploy@192.168.31.15
+ DEBUG [dfd2d6c7] Command: /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null
+ DEBUG [dfd2d6c7] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [dfd2d6c7] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [cf2e461e] Running [ -f /var/www/Evolution/repo/HEAD ] as deploy@192.168.31.15
+ DEBUG [cf2e461e] Command: [ -f /var/www/Evolution/repo/HEAD ]
+ DEBUG [cf2e461e] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/Evolution/repo
+ DEBUG [ebbff973] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [ebbff973] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [ebbff973] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [7d92d7c0] Running /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git as deploy@192.168.31.15
+ DEBUG [7d92d7c0] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git )
+  INFO [7d92d7c0] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [18cb250a] Running /usr/bin/env git remote update --prune as deploy@192.168.31.15
+ DEBUG [18cb250a] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [18cb250a] 	正在获取 origin
+ DEBUG [18cb250a] 	来自 https://github.com/lemonadezZ/Evolution
+   29ea200..2a42b4d  master     -> master
+  INFO [18cb250a] Finished in 2.812 seconds with exit status 0 (successful).
+ DEBUG [438fbacc] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [438fbacc] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [438fbacc] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [438fef3c] Running /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201632 as deploy@192.168.31.15
+ DEBUG [438fef3c] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201632 )
+  INFO [438fef3c] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [b9a647c8] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201632 as deploy@192.168.31.15
+ DEBUG [b9a647c8] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201632 )
+ DEBUG [b9a647c8] 	tar: .env：时间戳 2017-03-25 04:16:11 是未来的 1026.669442152 秒之后
+tar: .gitignore：时间戳 2017-03-25 04:16:11 是未来的 1026.669133453 秒之后
+tar: .idea/Evolution.iml：时间戳 2017-03-25 04:16:11 是未来的 1026.669005386 秒之后
+tar: .idea/blade.xml：时间戳 2017-03-25 04:16:11 是未来的 1026.668947696 秒之后
+tar: .idea/modules.xml：时间戳 2017-03-25 04:16:11 是未来的 1026.668896096 秒之后
+tar: .idea/vcs.xml：时间戳 2017-03-25 04:16:11 是未来的 1026.668848122 秒之后
+tar: .idea：时间戳 2017-03-25 04:16:11 是未来的 1026.668828722 秒之后
+tar: Capfile：时间戳 2017-03-25 04:16:11 是未来的 1026.668786042 秒之后
+tar: Dockerfile：时间戳 2017-03-25 04:16:11 是未来的 1026.668742312 秒之后
+tar: config/deploy.rb：时间戳 2017-03-25 04:16:11 是未来的 1026.668651889 秒之后
+tar: config/deploy/development.rb：时间戳 2017-03-25 04:16:11 是未来的 1026.668563226 秒之后
+tar: config/deploy/production.rb：时间戳 2017-03-25 04:16:11 是未来的 1026.668436288 秒之后
+tar: config/deploy/staging.rb：时间戳 2017-03-25 04:16:11 是未来的 1026.668378125 秒之后
+tar: config/deploy：时间戳 2017-03-25 04:16:11 是未来的 1026.668360077 秒之后
+tar: config：时间戳 2017-03-25 04:16:11 是未来的 1026.668351134 秒之后
+tar: nginx/development.conf：时间戳 2017-03-25 04:16:11 是未来的 1026.668257142 秒之后
+tar: nginx：时间戳 2017-03-25 04:16:11 是未来的 1026.668235173 秒之后
+  INFO [b9a647c8] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG [7d765b66] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [7d765b66] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [7d765b66] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [b1a17801] Running /usr/bin/env mkdir -p bootstrap/cache as deploy@192.168.31.15
+ DEBUG [b1a17801] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [b1a17801] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [593477f7] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [593477f7] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [593477f7] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [37df7c50] Running /usr/bin/env mkdir -p storage as deploy@192.168.31.15
+ DEBUG [37df7c50] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage
+  INFO [37df7c50] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [c20c5cf5] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c20c5cf5] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [c20c5cf5] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [5b65213f] Running /usr/bin/env mkdir -p storage/app as deploy@192.168.31.15
+ DEBUG [5b65213f] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/app
+  INFO [5b65213f] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [cb066aa9] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [cb066aa9] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [cb066aa9] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [a2593f45] Running /usr/bin/env mkdir -p storage/app/public as deploy@192.168.31.15
+ DEBUG [a2593f45] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/app/public
+  INFO [a2593f45] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [af7ade19] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [af7ade19] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [af7ade19] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [aeeecc00] Running /usr/bin/env mkdir -p storage/framework as deploy@192.168.31.15
+ DEBUG [aeeecc00] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/framework
+  INFO [aeeecc00] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [bbf2c42f] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [bbf2c42f] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [bbf2c42f] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [f0b6e7b5] Running /usr/bin/env mkdir -p storage/framework/cache as deploy@192.168.31.15
+ DEBUG [f0b6e7b5] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [f0b6e7b5] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [3c6557bb] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [3c6557bb] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [3c6557bb] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [11ec5412] Running /usr/bin/env mkdir -p storage/framework/sessions as deploy@192.168.31.15
+ DEBUG [11ec5412] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [11ec5412] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [9ff17e0e] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [9ff17e0e] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [9ff17e0e] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [2705379a] Running /usr/bin/env mkdir -p storage/framework/views as deploy@192.168.31.15
+ DEBUG [2705379a] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [2705379a] Finished in 0.039 seconds with exit status 0 (successful).
+ DEBUG [a48a6432] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [a48a6432] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [a48a6432] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [9cecd7b1] Running /usr/bin/env mkdir -p storage/logs as deploy@192.168.31.15
+ DEBUG [9cecd7b1] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env mkdir -p storage/logs
+  INFO [9cecd7b1] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [c5c28b1a] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c5c28b1a] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [c5c28b1a] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [7084206f] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.168.31.15
+ DEBUG [7084206f] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7084206f] 	2a42b4d04a9c23223146d6744875099a4dabcf84
+ DEBUG [7084206f] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [0a78d594] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [0a78d594] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [0a78d594] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [33143268] Running /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION as deploy@192.168.31.15
+ DEBUG [33143268] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION
+  INFO [33143268] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [d7435092] Running if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [d7435092] Command: if test ! -d /var/www/Evolution/releases/20170324201632; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201632'" 1>&2; false; fi
+ DEBUG [d7435092] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [4f304468] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as deploy@192.168.31.15
+ DEBUG [4f304468] Command: cd /var/www/Evolution/releases/20170324201632 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-25 04:18:22 +0800 cap development deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d0a141ed] Running /usr/bin/env mkdir -p /tmp as deploy@192.168.31.15
+ DEBUG [d0a141ed] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d0a141ed] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Evolution-development-jingz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Evolution-development-jingz.sh 100.0%
+  INFO [4cffcd7c] Running /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh as deploy@192.168.31.15
+ DEBUG [4cffcd7c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh
+  INFO [4cffcd7c] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [ddcff0ff] Running /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD as deploy@192.168.31.15
+ DEBUG [ddcff0ff] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD )
+ DEBUG [ddcff0ff] 	2a42b4d04a9c23223146d6744875099a4dabcf84	HEAD
+  INFO [ddcff0ff] Finished in 1.592 seconds with exit status 0 (successful).
+  INFO [7ac395a8] Running /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases as deploy@192.168.31.15
+ DEBUG [7ac395a8] Command: /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases
+  INFO [7ac395a8] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [d3c5fc94] Running [ -f /var/www/Evolution/current/REVISION ] as deploy@192.168.31.15
+ DEBUG [d3c5fc94] Command: [ -f /var/www/Evolution/current/REVISION ]
+ DEBUG [d3c5fc94] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [f90e56da] Running /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null as deploy@192.168.31.15
+ DEBUG [f90e56da] Command: /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null
+ DEBUG [f90e56da] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [f90e56da] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [c07691ce] Running [ -f /var/www/Evolution/repo/HEAD ] as deploy@192.168.31.15
+ DEBUG [c07691ce] Command: [ -f /var/www/Evolution/repo/HEAD ]
+ DEBUG [c07691ce] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/Evolution/repo
+ DEBUG [0f8c739f] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [0f8c739f] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [0f8c739f] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [0fcdde63] Running /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git as deploy@192.168.31.15
+ DEBUG [0fcdde63] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git )
+  INFO [0fcdde63] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [c25586e5] Running /usr/bin/env git remote update --prune as deploy@192.168.31.15
+ DEBUG [c25586e5] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c25586e5] 	正在获取 origin
+  INFO [c25586e5] Finished in 1.300 seconds with exit status 0 (successful).
+ DEBUG [97560df9] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [97560df9] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [97560df9] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [5d0d0583] Running /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201827 as deploy@192.168.31.15
+ DEBUG [5d0d0583] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env mkdir -p /var/www/Evolution/releases/20170324201827 )
+  INFO [5d0d0583] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [f587c226] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201827 as deploy@192.168.31.15
+ DEBUG [f587c226] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170324201827 )
+ DEBUG [f587c226] 	tar: .env：时间戳 2017-03-25 04:16:11 是未来的 913.033627492 秒之后
+tar: .gitignore：时间戳 2017-03-25 04:16:11 是未来的 913.033272444 秒之后
+tar: .idea/Evolution.iml：时间戳 2017-03-25 04:16:11 是未来的 913.032794312 秒之后
+tar: .idea/blade.xml：时间戳 2017-03-25 04:16:11 是未来的 913.032704412 秒之后
+tar: .idea/modules.xml：时间戳 2017-03-25 04:16:11 是未来的 913.032645 秒之后
+tar: .idea/vcs.xml：时间戳 2017-03-25 04:16:11 是未来的 913.032588658 秒之后
+tar: .idea：时间戳 2017-03-25 04:16:11 是未来的 913.032567496 秒之后
+tar: Capfile：时间戳 2017-03-25 04:16:11 是未来的 913.032515388 秒之后
+tar: Dockerfile：时间戳 2017-03-25 04:16:11 是未来的 913.032471326 秒之后
+tar: config/deploy.rb：时间戳 2017-03-25 04:16:11 是未来的 913.032364019 秒之后
+tar: config/deploy/development.rb：时间戳 2017-03-25 04:16:11 是未来的 913.032272008 秒之后
+tar: config/deploy/production.rb：时间戳 2017-03-25 04:16:11 是未来的 913.032214013 秒之后
+tar: config/deploy/staging.rb：时间戳 2017-03-25 04:16:11 是未来的 913.032056856 秒之后
+tar: config/deploy：时间戳 2017-03-25 04:16:11 是未来的 913.032013313 秒之后
+tar: config：时间戳 2017-03-25 04:16:11 是未来的 913.031997717 秒之后
+tar: nginx/development.conf：时间戳 2017-03-25 04:16:11 是未来的 913.031830196 秒之后
+tar: nginx：时间戳 2017-03-25 04:16:11 是未来的 913.031787589 秒之后
+  INFO [f587c226] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [aaeaf7a2] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [aaeaf7a2] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [aaeaf7a2] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [485e0595] Running /usr/bin/env mkdir -p bootstrap/cache as deploy@192.168.31.15
+ DEBUG [485e0595] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [485e0595] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [e541a195] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [e541a195] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [e541a195] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [bafdcaed] Running /usr/bin/env mkdir -p storage as deploy@192.168.31.15
+ DEBUG [bafdcaed] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage
+  INFO [bafdcaed] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [29b2ab65] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [29b2ab65] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [29b2ab65] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [dc2745a2] Running /usr/bin/env mkdir -p storage/app as deploy@192.168.31.15
+ DEBUG [dc2745a2] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/app
+  INFO [dc2745a2] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [e766e4eb] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [e766e4eb] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [e766e4eb] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [700a2c67] Running /usr/bin/env mkdir -p storage/app/public as deploy@192.168.31.15
+ DEBUG [700a2c67] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/app/public
+  INFO [700a2c67] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [4de70261] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [4de70261] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [4de70261] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [3f6d0470] Running /usr/bin/env mkdir -p storage/framework as deploy@192.168.31.15
+ DEBUG [3f6d0470] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/framework
+  INFO [3f6d0470] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [9649e112] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [9649e112] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [9649e112] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [1a7464f1] Running /usr/bin/env mkdir -p storage/framework/cache as deploy@192.168.31.15
+ DEBUG [1a7464f1] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [1a7464f1] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [0c024b6d] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [0c024b6d] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [0c024b6d] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [56785ff3] Running /usr/bin/env mkdir -p storage/framework/sessions as deploy@192.168.31.15
+ DEBUG [56785ff3] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [56785ff3] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [c7c6a01e] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [c7c6a01e] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [c7c6a01e] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [4d4f7628] Running /usr/bin/env mkdir -p storage/framework/views as deploy@192.168.31.15
+ DEBUG [4d4f7628] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [4d4f7628] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [16f233e5] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [16f233e5] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [16f233e5] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [581022a9] Running /usr/bin/env mkdir -p storage/logs as deploy@192.168.31.15
+ DEBUG [581022a9] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env mkdir -p storage/logs
+  INFO [581022a9] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [7d38f1f8] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [7d38f1f8] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [7d38f1f8] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [c1625a93] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.168.31.15
+ DEBUG [c1625a93] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c1625a93] 	2a42b4d04a9c23223146d6744875099a4dabcf84
+ DEBUG [c1625a93] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [819cbeb7] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [819cbeb7] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [819cbeb7] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [cd58d1f1] Running /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION as deploy@192.168.31.15
+ DEBUG [cd58d1f1] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION
+  INFO [cd58d1f1] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [09ce1f50] Running if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [09ce1f50] Command: if test ! -d /var/www/Evolution/releases/20170324201827; then echo "Directory does not exist '/var/www/Evolution/releases/20170324201827'" 1>&2; false; fi
+ DEBUG [09ce1f50] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [42acd73c] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as deploy@192.168.31.15
+ DEBUG [42acd73c] Command: cd /var/www/Evolution/releases/20170324201827 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-25 10:12:40 +0800 cap development deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bcdafd6c] Running /usr/bin/env mkdir -p /tmp as deploy@192.168.31.15
+ DEBUG [bcdafd6c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bcdafd6c] Finished in 0.384 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Evolution-development-jingz.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Evolution-development-jingz.sh 100.0%
+  INFO [4fc76cc8] Running /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh as deploy@192.168.31.15
+ DEBUG [4fc76cc8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Evolution-development-jingz.sh
+  INFO [4fc76cc8] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [cdbceb7e] Running /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD as deploy@192.168.31.15
+ DEBUG [cdbceb7e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git ls-remote https://github.com/lemonadezZ/Evolution.git HEAD )
+ DEBUG [cdbceb7e] 	2a42b4d04a9c23223146d6744875099a4dabcf84	HEAD
+  INFO [cdbceb7e] Finished in 1.739 seconds with exit status 0 (successful).
+  INFO [c30658c0] Running /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases as deploy@192.168.31.15
+ DEBUG [c30658c0] Command: /usr/bin/env mkdir -p /var/www/Evolution/shared /var/www/Evolution/releases
+  INFO [c30658c0] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [990732cd] Running [ -f /var/www/Evolution/current/REVISION ] as deploy@192.168.31.15
+ DEBUG [990732cd] Command: [ -f /var/www/Evolution/current/REVISION ]
+ DEBUG [990732cd] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [8ee92c0c] Running /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null as deploy@192.168.31.15
+ DEBUG [8ee92c0c] Command: /usr/bin/env cat /var/www/Evolution/current/REVISION 2>/dev/null
+ DEBUG [8ee92c0c] 	924d51a371955e9255eb734043de41b319364c6c
+ DEBUG [8ee92c0c] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [2e8f5162] Running [ -f /var/www/Evolution/repo/HEAD ] as deploy@192.168.31.15
+ DEBUG [2e8f5162] Command: [ -f /var/www/Evolution/repo/HEAD ]
+ DEBUG [2e8f5162] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/Evolution/repo
+ DEBUG [2989b72c] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [2989b72c] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [2989b72c] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [85e7767c] Running /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git as deploy@192.168.31.15
+ DEBUG [85e7767c] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote set-url origin https://github.com/lemonadezZ/Evolution.git )
+  INFO [85e7767c] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [27b39be5] Running /usr/bin/env git remote update --prune as deploy@192.168.31.15
+ DEBUG [27b39be5] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [27b39be5] 	正在获取 origin
+  INFO [27b39be5] Finished in 1.304 seconds with exit status 0 (successful).
+ DEBUG [92bf0119] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [92bf0119] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [92bf0119] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [346243dc] Running /usr/bin/env mkdir -p /var/www/Evolution/releases/20170325021247 as deploy@192.168.31.15
+ DEBUG [346243dc] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env mkdir -p /var/www/Evolution/releases/20170325021247 )
+  INFO [346243dc] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [647a4d6f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170325021247 as deploy@192.168.31.15
+ DEBUG [647a4d6f] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/Evolution/releases/20170325021247 )
+  INFO [647a4d6f] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [f7ead71c] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [f7ead71c] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [f7ead71c] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [97646b5c] Running /usr/bin/env mkdir -p bootstrap/cache as deploy@192.168.31.15
+ DEBUG [97646b5c] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p bootstrap/cache
+  INFO [97646b5c] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [e9a24825] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [e9a24825] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [e9a24825] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [11d69c23] Running /usr/bin/env mkdir -p storage as deploy@192.168.31.15
+ DEBUG [11d69c23] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage
+  INFO [11d69c23] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [87e9fc5c] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [87e9fc5c] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [87e9fc5c] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [4fbf44dd] Running /usr/bin/env mkdir -p storage/app as deploy@192.168.31.15
+ DEBUG [4fbf44dd] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/app
+  INFO [4fbf44dd] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [47ede45f] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [47ede45f] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [47ede45f] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [eecfcabf] Running /usr/bin/env mkdir -p storage/app/public as deploy@192.168.31.15
+ DEBUG [eecfcabf] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/app/public
+  INFO [eecfcabf] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [81355743] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [81355743] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [81355743] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [8667cd65] Running /usr/bin/env mkdir -p storage/framework as deploy@192.168.31.15
+ DEBUG [8667cd65] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/framework
+  INFO [8667cd65] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [06b05788] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [06b05788] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [06b05788] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [baa5d701] Running /usr/bin/env mkdir -p storage/framework/cache as deploy@192.168.31.15
+ DEBUG [baa5d701] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [baa5d701] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [d5629a62] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [d5629a62] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [d5629a62] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [134e96b1] Running /usr/bin/env mkdir -p storage/framework/sessions as deploy@192.168.31.15
+ DEBUG [134e96b1] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [134e96b1] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [ea5e27a2] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [ea5e27a2] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [ea5e27a2] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [1422e427] Running /usr/bin/env mkdir -p storage/framework/views as deploy@192.168.31.15
+ DEBUG [1422e427] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/framework/views
+  INFO [1422e427] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [0fdbe4ea] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [0fdbe4ea] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [0fdbe4ea] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [a69f5f53] Running /usr/bin/env mkdir -p storage/logs as deploy@192.168.31.15
+ DEBUG [a69f5f53] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env mkdir -p storage/logs
+  INFO [a69f5f53] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [e401686f] Running if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [e401686f] Command: if test ! -d /var/www/Evolution/repo; then echo "Directory does not exist '/var/www/Evolution/repo'" 1>&2; false; fi
+ DEBUG [e401686f] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [98b04611] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.168.31.15
+ DEBUG [98b04611] Command: cd /var/www/Evolution/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Evolution-development-jingz.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [98b04611] 	2a42b4d04a9c23223146d6744875099a4dabcf84
+ DEBUG [98b04611] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [e0087249] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [e0087249] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [e0087249] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [8df9a11c] Running /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION as deploy@192.168.31.15
+ DEBUG [8df9a11c] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env echo "2a42b4d04a9c23223146d6744875099a4dabcf84" >> REVISION
+  INFO [8df9a11c] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [fb7c1a3c] Running if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi as deploy@192.168.31.15
+ DEBUG [fb7c1a3c] Command: if test ! -d /var/www/Evolution/releases/20170325021247; then echo "Directory does not exist '/var/www/Evolution/releases/20170325021247'" 1>&2; false; fi
+ DEBUG [fb7c1a3c] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [4f5854a8] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as deploy@192.168.31.15
+ DEBUG [4f5854a8] Command: cd /var/www/Evolution/releases/20170325021247 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
