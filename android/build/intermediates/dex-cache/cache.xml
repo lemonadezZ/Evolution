@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.42.3\jars\libs\infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\infer-annotations-1.5_b6c26c3ad2e00eb050d4f5e97123588e1c122f98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-0.11.0_5e3d83a21d21e99f71cc3c7b7058b3089989d7d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\okio-1.9.0_08ad933be8535a7cf637b4a7f1185770f237b0a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_3871c456d34da9ed27f0ede8b1d11596f1756a7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-0.11.0_4164da9a154362b36ef3cb79cd7a8105ace932ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_de15069e09b7fd0b9a062e268101dbb3c898c4b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_965c759c7d4787ce0120b93a16673c7d45ff678a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-0.11.0_cb0903be9243d9ae0a844ff09a8fff598d4e0b26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_0687b06a76bfec712268023f8d8c202cdb212e4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_65884640d54b3a9646bd6be98afc35380f25f3c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_a3d6acecdaee820618c325ce30db0ca1ec3c37f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_fe6867c8165acf2df943281ef0385d671a68daf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-0.11.0_3ba4109ed757e7cd8a7e2fa423d44753a948810b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_3b13d44e6986eec07804664c20c3859ea8881d01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-0.11.0_a7a42e706db6130e6529cf7fdfdc0e62f3800b1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-ws\3.4.1\8ace66ef7002d98f633377c9e67daeeb196d8c3b\okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\okhttp-ws-3.4.1_83391a851fca9d049316594bc81c6a1ca536425c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\library-2.4.0_8aef40c120706fa77a227b58a84f1c2f26726a4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_125043b5f824b1dff66072dc2557641748e0e290.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_b75e34b4af44a7f6710ceda58ea03c5c3fa916ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-0.11.0_0fca650aaf0e10ae0691553c08255f1ff938bf75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_f0f63eddaa38e6c947c5376103011b2b4511a43e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_a8f1e07f45892155d0b5d5d5b597064b46768fa3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_fcc9a73a9ed8d37b5add57a57599b07a7a7362f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.42.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="962b06c207e808c0557ffd6163ac584025a96021">
+        <dex dex="C:\Users\jingz\Desktop\lemonadezZ\Evolution\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.42.3_c7a6b896803f87e2cc2eb36708738905253ed015.jar" />
+    </item>
+
+</items>

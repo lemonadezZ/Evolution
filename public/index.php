@@ -20,7 +20,7 @@
 */
 
 require __DIR__.'/../bootstrap/autoload.php';
-
+include __DIR__.'/../function.php';
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights

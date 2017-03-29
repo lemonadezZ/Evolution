@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "lemonadezZ/Evolution",
+    "description": "Evolution",
+    "keywords": ["Evolution"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -9,7 +9,8 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "predis/predis": "~1.1@dev",
-         "gregwar/captcha": "1.*"
+         "gregwar/captcha": "1.*",
+         "zizaco/entrust": "5.2.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
