@@ -5,12 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Website Page</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
@@ -20,7 +16,6 @@
                 height: 100vh;
                 margin: 0;
             }
-
             .full-height {
                 height: 100vh;
             }
@@ -51,7 +46,7 @@
 
             .links > a {
                 color: #636b6f;
-                padding: 0 25px;
+                padding: 0 5px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -69,17 +64,17 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">{{__('auth.Home')}}</a>
                     @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/login') }}">{{__('auth.Login') }}</a>
+                        <a href="{{ url('/register') }}">{{__('auth.Register') }}</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Evolution
+                    Digtaldance
                 </div>
             </div>
         </div>

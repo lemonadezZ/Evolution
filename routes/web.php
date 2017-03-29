@@ -14,3 +14,34 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/help', function () {
+   	return \Evolution\Conf::Name('AppName');
+});
+Route::get('/captcha', function () {
+	header('Content-type: image/jpeg');
+ 	$builder = new \Gregwar\Captcha\CaptchaBuilder();
+	$builder->build();
+	session('phrase',$builder->getPhrase());
+	$builder->output();
+});
+
+Route::get('/setlang/{locale}', function ($locale) {
+    App::setLocale($locale);
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

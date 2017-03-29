@@ -2,3 +2,6 @@
 /storage/app
 /storage/framework
 /storage/logs
+/node_modules
+/log
+.env
