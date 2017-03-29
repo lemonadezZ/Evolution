@@ -16,4 +16,5 @@ return [
 	'Verification code'=>"验证码",
 	'SMS code'=>"短信验证码",
 	'getSMS code'=>"获取短信验证码",
+	'Phone'=>"电话号码",
 ];

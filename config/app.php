@@ -177,6 +177,8 @@ return [
         Evolution\Providers\EventServiceProvider::class,
         Evolution\Providers\RouteServiceProvider::class,
 
+        Zizaco\Entrust\EntrustServiceProvider::class,
+
     ],
 
     /*

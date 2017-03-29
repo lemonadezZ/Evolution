@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
 <div class="container">
@@ -64,35 +64,68 @@
                             <label for="password-confirm" class="col-md-4 control-label">{{__('auth.Invitation code')}}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="form-control" name="invitation_code" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">{{__('auth.Verification code')}}</label>
+                            <label for="captcha" class="col-md-4 control-label">{{__('auth.Verification code')}}</label>
 
                             <div class="col-md-3">
-                                <input id="password-confirm" type="text" class="form-control" name="captcha" required>
+                                <input id="captcha" type="text" class="form-control" name="captcha" required>
                             </div>
                              <div class="col-md-3">
-                                <a href="javascript:;" class="" onclick="document.getElementById('captcha').src='/captcha?t='+new Date().getTime()"><img src="/captcha" width="100%" id="captcha"/></a>
+                                <a href="javascript:;" class="" onclick="document.getElementById('captcha_img').src='/captcha?t='+new Date().getTime()"><img src="/captcha" width="100%" id="captcha_img"/></a>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">{{__('auth.SMS code')}}</label>
+                            <label for="password-confirm" class="col-md-4 control-label">{{__('auth.Phone')}}</label>
 
                             <div class="col-md-3">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="phone" type="text" class="form-control" name="phone" required>
                             </div>
                             <div class="col-md-3">
-                                <a href="javascript:;" onclick="javascript:;" id="getSMScode" class="btn btn-primary">{{__('auth.getSMS code')}}</a>
+                                <a  id="getSMScode" class="btn btn-primary">{{__('auth.getSMS code')}}</a>
                             </div>
                         </div>
                         <script type="text/javascript">
                             $(function(){
                                     $('#getSMScode').click(function(){
-                                        $(this).text="验证码已经发送请注意查收"
+                                        //TODO AJAX
+                                        var _this=$(this);
+                                        var _int=10;
+                                        var _captcha=$('#captcha').val();
+                                        var _phone=$('#phone').val();
+                                        if(_captcha=="" ){
+                                            alert('验证码不能为空');
+                                            return false;
+                                        }
+                                        if( _phone==""){
+                                            alert('电话号码不能为空');
+                                            return false;
+                                        }
+                                        _this.addClass('disabled')
+                                        $.get('/sendSMScode/'+_phone+'/'+_captcha,{},function(){
+                                            
+                                                var _timer= setInterval(function(){
+                                                    _int--;
+                                                    _this.text("验证码已经发送,请注意查收("+_int+")")
+                                                    if(_int<=0){
+                                                        clearInterval(_timer)
+                                                         _this.removeClass('disabled')
+                                                        _this.text("重新发送验证短信")
+                                                    }
+                                                },1000)
+                                        },'json').done(function(){
+                                            console.log('done');
+                                        }).fail(function(){
+                                            _this.removeClass('disabled')
+                                            _this.text("重新发送验证短信")
+                                        }).always(function(){
+
+                                        })
+                                      
                                     })
                             })
                         </script>
@@ -100,13 +133,9 @@
 
 
                         <div class="form-group">
-                            
-
-                            <div class="col-md-4">
-                             
-                            </div>
+                            <label for="password-confirm" class="col-md-4 control-label">{{__('auth.SMS code')}}</label>
                             <div class="col-md-2">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="form-control" name="" required>
                             </div>
                         </div> 
 
