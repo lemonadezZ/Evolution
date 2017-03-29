@@ -1,0 +1,22 @@
+{
+  "name": "Evolution",
+  "homepage": "https://github.com/lemonadezZ/Evolution",
+  "authors": [
+    "evolution@jingdor.com"
+  ],
+  "description": "Evolition frontend",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-pjax": "^1.9.6",
+    "system.js": "^0.20.10",
+    "jquery-ujs": "^1.2.2"
+  }
+}

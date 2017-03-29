@@ -3,5 +3,7 @@
 /storage/framework
 /storage/logs
 /node_modules
+/public/bower_components
+/android/app/build
 /log
 .env
