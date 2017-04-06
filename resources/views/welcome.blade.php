@@ -4,9 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Website Page</title>
-
+        <title>Evolution</title>
         <style>
             html, body {
                 background-color: #fff;
@@ -71,10 +69,9 @@
                     @endif
                 </div>
             @endif
-
             <div class="content">
                 <div class="title m-b-md">
-                    Digtaldance
+                    Evolution
                 </div>
             </div>
         </div>
